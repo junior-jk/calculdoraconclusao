@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Steps.CalculadoraSimplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.17 s -- in Steps.CalculadoraSimplesTest
