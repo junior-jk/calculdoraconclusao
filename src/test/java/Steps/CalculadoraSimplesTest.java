@@ -19,7 +19,7 @@ public class CalculadoraSimplesTest {
   private AndroidDriver driver;
 
   @BeforeEach
-  public void iniciar() {
+  public void iniciar() { 
     var options = new BaseOptions<>()
       .amend("platformName", "Android")
       .amend("appium:platformVersion", "9.0")
