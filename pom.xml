@@ -14,28 +14,29 @@
     </properties>
 
     <dependencies>
-   <!-- JUnit 5 -->
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>5.8.1</version>
-        <scope>test</scope>
-    </dependency>
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
 
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.8.1</version>
-        <scope>test</scope>
-    </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
 
-    <!-- JUnit 5 para testes parametrizados -->
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-params</artifactId>
-        <version>5.8.1</version>
-        <scope>test</scope>
-    </dependency>
+        <!-- JUnit 5 para testes parametrizados -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Leitura de CSV -->
         <dependency>
             <groupId>com.opencsv</groupId>
@@ -43,25 +44,28 @@
             <version>5.7.1</version>
         </dependency>
 
-                        <!-- Add your existing dependencies here -->
+        <!-- Appium Java Client -->
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>8.6.0</version> <!-- Ajuste conforme necessário -->
+            <version>8.6.0</version>
         </dependency>
-        
+
+        <!-- Selenium Java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.13.0</version> <!-- Ajuste conforme necessário -->
+            <version>4.13.0</version>
         </dependency>
-                    <!-- Add your existing dependencies here -->
+
+        <!-- Cucumber -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.0.0</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
@@ -69,7 +73,11 @@
             <scope>test</scope>
         </dependency>
 
-
+        <!-- Apache Commons CSV -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.9.0</version>
+        </dependency>
     </dependencies>
-
 </project>

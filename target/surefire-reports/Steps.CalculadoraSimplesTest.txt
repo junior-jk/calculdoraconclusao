@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: Steps.CalculadoraSimplesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.17 s -- in Steps.CalculadoraSimplesTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.254 s <<< FAILURE! - in Steps.CalculadoraSimplesTest
+sampleTest  Time elapsed: 2.242 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Unable to parse remote response: CCYAbuse - too many jobs 
+Host info: host: 'DESKTOP-JG3IJ6U', ip: '192.168.0.8'
+	at Steps.CalculadoraSimplesTest.iniciar(CalculadoraSimplesTest.java:39)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: CCYAbuse - too many jobs
+	at Steps.CalculadoraSimplesTest.iniciar(CalculadoraSimplesTest.java:39)
+Caused by: org.openqa.selenium.json.JsonException: 
+Unable to determine type from: C. Last 1 characters read: C
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: driver.version: AndroidDriver
+	at Steps.CalculadoraSimplesTest.iniciar(CalculadoraSimplesTest.java:39)
+
