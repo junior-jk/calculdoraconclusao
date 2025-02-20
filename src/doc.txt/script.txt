@@ -16,10 +16,6 @@ var caps = driver.getSessionDetails();
 
 
 
-
-
-
-
 // This sample code supports Appium Java client >=9
 // https://github.com/appium/java-client
 import io.appium.java_client.remote.options.BaseOptions;
