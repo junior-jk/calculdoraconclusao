@@ -28,5 +28,9 @@ public class CalculatorPage {
     public void clear() {
         driver.findElement(AppiumBy.accessibilityId("clear")).click();
     }
+    public String obterResultado() {
+        WebElement resultadoElement = driver.findElement(AppiumBy.id("com.google.android.calculator:id/result_final"));
+        return resultadoElement.getText();
+   }
 }
 

@@ -74,9 +74,14 @@ private URL getUrl() {
         driver.findElement(AppiumBy.accessibilityId(num2)).click();
         driver.findElement(AppiumBy.accessibilityId("equals")).click();
 
+                // Obtém o resultado da tela
         String resultadoObtido = driver.findElement(AppiumBy.id("com.google.android.calculator:id/result_final")).getText();
-        Assertions.assertEquals(resultadoEsperado, resultadoObtido, "Erro na soma!");
+
+        // Valida se o resultado está correto
+        Assertions.assertEquals(resultadoEsperado, resultadoObtido, 
+            "Erro na soma: " + num1 + " + " + num2 + " deveria ser " + resultadoEsperado);
     }
+    
 
     @AfterEach
     public void tearDown() {

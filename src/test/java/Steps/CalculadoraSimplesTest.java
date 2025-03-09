@@ -4,6 +4,8 @@ import io.appium.java_client.remote.options.BaseOptions;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
+import static org.junit.Assert.assertEquals;
+
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -61,6 +63,9 @@ var el3 = driver.findElement(AppiumBy.accessibilityId("3"));
 el3.click();
 var el4 = driver.findElement(AppiumBy.accessibilityId("equals"));
 el4.click();
+
+assertEquals("12", driver.findElement(AppiumBy.id("com.google.android.calculator:id/result_final")).getText());
+
 var el5 = driver.findElement(AppiumBy.accessibilityId("clear"));
 el5.click();
 
@@ -72,10 +77,12 @@ var el8 = driver.findElement(AppiumBy.accessibilityId("1"));
 el8.click();
 var el9 = driver.findElement(AppiumBy.accessibilityId("equals"));
 el9.click();
+assertEquals("2", driver.findElement(AppiumBy.id("com.google.android.calculator:id/result_final")).getText());
+
 var el10 = driver.findElement(AppiumBy.accessibilityId("clear"));   
 el10.click();
-
-  }
+  
+}
 
   @AfterEach
   public void tearDown() {
